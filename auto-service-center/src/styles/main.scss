@@ -1,0 +1,51 @@
+body {
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+.hero-section {
+  min-height: 90vh;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('https://images.unsplash.com/photo-1503376780353-7e6692767b70');
+
+  background-size: cover;
+  background-position: center;
+}
+
+.service-card {
+  transition: all 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+}
+
+.service-icon {
+  font-size: 3rem;
+  color: #dc3545;
+}
+
+.why-list li {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+.cta-section {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url('https://images.unsplash.com/photo-1486006920555-c77dcf18193c');
+
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-section {
+    padding: 100px 0;
+  }
+}
