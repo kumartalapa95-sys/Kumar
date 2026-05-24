@@ -1,50 +1,58 @@
-function Navbar() {
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import NavDropdown from "react-bootstrap/NavDropdown";
+import Button from "react-bootstrap/Button";
+
+import { FaPhoneAlt } from "react-icons/fa";
+
+function CustomNavbar() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-black sticky-top py-3">
-      <div className="container">
-        <a className="navbar-brand fw-bold fs-3" href="#">
-          Premium Tire & Auto Service
-        </a>
-
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
+    <Navbar
+      expand="lg"
+      bg="black"
+      variant="dark"
+      sticky="top"
+      className="py-3 shadow-sm custom-navbar"
+      collapseOnSelect
+    >
+      <Container>
+        <Navbar.Brand
+          href="/"
+          className="fw-bold fs-3 text-uppercase"
         >
-          <span className="navbar-toggler-icon"></span>
-        </button>
+          Premium Tire & Auto
+        </Navbar.Brand>
 
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav ms-auto align-items-lg-center gap-lg-4">
-            <li className="nav-item">
-              <a className="nav-link" href="#services">
-                Services
-              </a>
-            </li>
+        <Navbar.Toggle aria-controls="main-navbar" />
+        <Navbar.Collapse id="main-navbar">
+          <Nav className="ms-auto align-items-lg-center gap-lg-3 text-center mt-4 mt-lg-0">
+            <Nav.Link href="#services" className="custom-nav-link">
+              Services
+            </Nav.Link>
+            <Nav.Link href="#reviews" className="custom-nav-link">
+              Reviews
+            </Nav.Link>
+            <Nav.Link href="#contact" className="custom-nav-link">
+              Contact
+            </Nav.Link>
 
-            <li className="nav-item">
-              <a className="nav-link" href="#reviews">
-                Reviews
-              </a>
-            </li>
 
-            <li className="nav-item">
-              <a className="nav-link" href="#contact">
-                Contact
-              </a>
-            </li>
-
-            <li className="nav-item mt-3 mt-lg-0">
-              <a href="tel:+19050000000" className="btn btn-danger px-4">
+            <div className="mt-3 mt-lg-0">
+              <Button
+                variant="danger"
+                className="rounded-pill px-4 py-2 align-items-center gap-2"
+                href="tel:+19050000000"
+              >
+                <FaPhoneAlt />
                 Call Now
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+              </Button>
+            </div>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 }
 
-export default Navbar;
+export default CustomNavbar;

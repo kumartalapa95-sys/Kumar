@@ -26,7 +26,7 @@ function ContactSection() {
           <div className="col-lg-6">
             <iframe
               title="map"
-              src="https://www.google.com/maps/embed?pb=!1m18"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11805.603110903692!2d-83.0468766!3d42.29131305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883b2d962781220b%3A0xcb9c486f09ff10c8!2sFreshCo%20Huron%20Church%20%26%20Tecumseh!5e0!3m2!1sen!2sca!4v1779651507012!5m2!1sen!2sca"
               width="100%"
               height="350"
               style={{ border: 0, borderRadius: '20px' }}

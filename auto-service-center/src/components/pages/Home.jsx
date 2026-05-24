@@ -1,4 +1,4 @@
-import Navbar from '../layout/Navbar';
+import CustomNavbar from '../layout/Navbar';
 import Footer from '../layout/Footer';
 
 import Hero from '../common/Hero';
@@ -12,7 +12,7 @@ import ContactSection from '../common/ContactSection';
 function Home() {
   return (
     <>
-      <Navbar />
+      <CustomNavbar />
 
       <Hero />
       <Services />
